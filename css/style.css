@@ -290,7 +290,8 @@ team section
         font-size: 14px;
         padding-top: 20px;
         line-height: 0px;
-                text-align: center;
+        text-align: center;
+        font-feature-settings: "kern" 1;
     }
 
 .custom{

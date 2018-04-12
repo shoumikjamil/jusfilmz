@@ -315,9 +315,9 @@
 							<h4 class="plan_title">Photography</h4>
 							<ul>
 								<li>$80 per hour</li>
-								<li>Any location, Anytime*</li>
+								<li>Any location, Anytime<sup>1</sup></li>
 								<li>High Definition Resolution</li>
-								<li>Professional Photo Editing</li>
+								<li>Professional Photo Editing<sup>2</sup></li>
 								<li>Free Digital Download</li>
 							</ul>
 							<a href="#contact" class="btn btn-warning">CONTACT US</a>
@@ -328,9 +328,9 @@
 							<h4 class="plan_title" style="border-bottom: 0px; padding: 0px">Photography <h5 class="plan_title" style="font-weight: 350px;">(Special&nbsp;Deal)</h5></h4>
 							<ul>
 								<li>$150 for 2 hours</li>
-								<li>Any location, Anytime*</li>
+								<li>Any location, Anytime<sup>1</sup></li>
 								<li>High Definition Resolution</li>
-								<li>Professional Photo Editing</li>
+								<li>Professional Photo Editing<sup>2</sup></li>
 								<li>Free Digital Download</li>
 							</ul>
 							<a href="#contact" class="btn btn-warning">CONTACT US</a>
@@ -341,7 +341,7 @@
 							<h4 class="plan_title">Videography</h4>
 							<ul>
 								<li>$200 for 2 hours</li>
-								<li>Any location, Anytime*</li>
+								<li>Any location, Anytime<sup>1</sup></li>
 								<li>High Definition Resolution</li>
 								<li>Professional Video Editing</li>
 								<li>Free Digital Copy</li>
@@ -364,7 +364,8 @@
 					</div>					
 					<div class="col-md-12 col-sm-12 text-left">
 						<div class="section-title">
-								<h5> *prices may vary depending on weather, time, and location.</h5>
+								<h5> <sup>1</sup>prices may vary depending on weather, time, and location.</h5>
+								<h5> <sup>2</sup>optional TouchUp editing.</h5>
 							<!-- <hr> -->
 						</div>
 
@@ -395,20 +396,20 @@
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<form action="https://formspree.io/info@jusfilmz.com" method="POST" class="wow fadeInUp" data-wow-delay="0.5s">
+				<form id="contactForm">
+					<div class="alert animated bounceIn" data-wow-duration="0.75s">Your message has been sent! Thank you!</div>
 					<div class="col-md-6 col-sm-6">
-						<input type="text" class="form-control" placeholder="Name" name="name">
+						<input type="text" class="form-control" placeholder="Name" name="name" id="name">
 					</div>
 					<div class="col-md-6 col-sm-6">
-						<input type="email" class="form-control" placeholder="Email" name="email">
+						<input type="email" class="form-control" placeholder="Email" name="email" id="email">
 					</div>
 					<div class="col-md-12 col-sm-12">
-						<textarea class="form-control" placeholder="Message" rows="7" name="message"></textarea>
+						<textarea class="form-control" placeholder="Message" rows="7" name="message" id="message"></textarea>
 					</div>
 					<div class="col-md-offset-4 col-md-8 col-sm-offset-4 col-sm-8">
 						<input type="submit" class="form-control" value="SEND MESSAGE">
 					</div>
-					<input type="hidden" name="_next" value="/index.htmlq" />
 				</form>
 			</div>
 		</div>
@@ -434,7 +435,7 @@
 	</div>
 </footer>
 
-
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/smoothscroll.js"></script>
